@@ -427,7 +427,7 @@
       <static>true</static>
     </include>
     <include>
-      <name>pallet B-1-1-1 support</name>
+      <name>pallet B-2-1-1 support</name>
       <uri>model://europallet</uri>
       <pose>1.6 -1.5 3.27 0 0 1.56736</pose>
       <static>true</static>
@@ -441,7 +441,7 @@
       <static>true</static>
     </include>
     <include>
-      <name>pallet B-1-2 support</name>
+      <name>pallet B-2-2 support</name>
       <uri>model://europallet</uri>
       <pose>2.9 -1.5 3.27 0 0 1.56921</pose>
       <static>true</static>
