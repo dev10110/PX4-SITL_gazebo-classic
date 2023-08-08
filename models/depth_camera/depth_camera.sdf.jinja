@@ -37,7 +37,8 @@
           </image>
           <clip>
             <near>0.001</near> <!-- Intel RealSense D455 -->
-            <far>65.535</far> <!-- Intel RealSense D455 -->
+            <!-- <far>65.535</far> --> <!-- Intel RealSense D455 -->
+            <far>8.0</far>
           </clip>
           <distortion>
             <k1>0.0</k1>
@@ -54,6 +55,7 @@
           <frame_name>camera_link</frame_name>
           <hack_baseline>0.07</hack_baseline>
           <min_depth>0.2</min_depth>
+          <max_depth>8.0</max_depth>
         </plugin>
         {%- else -%}
         <update_rate>10</update_rate>
@@ -66,7 +68,8 @@
           </image>
           <clip>
             <near>0.001</near> <!-- Intel RealSense D455 -->
-            <far>65.535</far> <!-- Intel RealSense D455 -->
+            <!-- <far>65.535</far> --> <!-- Intel RealSense D455 -->
+            <far>8.0</far>
           </clip>
         </camera>
         <plugin filename="libgazebo_ros_openni_kinect.so" name="camera_controller">
@@ -75,7 +78,8 @@
           <alwaysOn>true</alwaysOn>
           <updateRate>10</updateRate>
           <pointCloudCutoff>0.2</pointCloudCutoff>
-          <pointCloudCutoffMax>65.535</pointCloudCutoffMax>
+          <!-- <pointCloudCutoffMax>65.535</pointCloudCutoffMax> -->
+          <pointCloudCutoffMax>8.0</pointCloudCutoffMax>
           <imageTopicName>rgb/image_raw</imageTopicName>
           <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
           <depthImageTopicName>depth/image_raw</depthImageTopicName>

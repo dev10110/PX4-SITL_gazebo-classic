@@ -19,7 +19,6 @@
         </limit>
       </axis>
     </joint>
-
     <plugin name="libgazebo_ros_p3d" filename="libgazebo_ros_p3d.so">
       <ros>
 	      <namespace>gazebo</namespace>
@@ -27,7 +26,7 @@
       </ros>
       <frame_name>world</frame_name>
       <body_name>visquad_base::base_link</body_name>
-      <update_rate>30.0</update_rate>
+      <update_rate>100.0</update_rate>
       <gaussian_noise>0.00</gaussian_noise>
     </plugin>
 
